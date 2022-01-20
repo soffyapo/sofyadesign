@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/main.css">
+    <title>Sofya's portfolio</title>
+</head>
+<body>
+    <header class="header">
+        <a style="margin-right: 50px" class="main-link active" onclick="handleMenuCLick('main')">Обо мне</a>
+        <a class="sub-link" onclick="handleMenuCLick('sub')">Портфолио</a>
+    </header>
+    <div class="main">
+        <img class="img" src="./img/ava.jpg" alt="Avatar">
+
+        <h1>
+            Привет, я Софья!
+        </h1>
+        <p>
+            Закончила Санкт-Петербургский Государственный Университет Промышленных Технологий и Дизайна.
+            Повышала квалификацию в HSE, по программе «Инструменты визуальных коммуникаций. Элементы и структура айдентики».
+        </p>
+    
+        <p>
+            С апреля 2021 года работаю в брендинговом агентстве Endy. До этого два года работала в KudaGo и столько же в Авито.
+            Люблю работать в разных направлениях: брендинг, smm, моушен, веб, 3D. И швец, и жнец, и на дудке игрец.
+        </p>
+        
+        <p>
+            Ищу место в этом мире, поэтому постоянно учусь. В Bang Bang Education на курсе Сергея Гурова теории и практике
+            композиционного проектирования. В Contented дизайну интерфейсов. В Skillbox моушен-дизайну. Проходила стажировку
+            в CreativePeople и Humbleteam.
+        </p>
+    
+        <p>
+            Сейчас обучаюсь на первой ступени в Бюро Горбунова.
+        </p>
+    
+        <h2>
+            Опыт работы
+        </h2>
+    
+        <p>
+            <b>ENDY</b> <br>
+            Апрель 2021 — по настоящее время
+        </p>
+        
+        <p class="p1">
+            Поддержка фирменного стиля, разработанного бернд-дизайнерами. Верстка гайдбука, дальнейшее развитие стиля. 
+            Поддержка клиента: от визиток, то навигации в торговых комлпексах. Различные рекламные макеты, лендинги. 
+            Подготовка к печати. SMM-поддержка: создание графических постов, сторис и таргета. Моушн и статика. 
+            Изображение пользователя, хайлайтсы, рекомендации по составлению ленты.
+        </p>
+    
+        <p>
+           <b>Авито</b> <br>
+            Сентябрь 2019 — январь 2021
+        </p>
+        
+        <p class="p1">
+            Оформления страниц профессионалных пользователей, презентации в PowerPoint, оформление e-mail рассылок, 
+            создание бренд-материалов, сувенирной продукции, монтаж видео и создание анимации.
+        </p>
+    
+        <p>
+            <b>KudaGo</b> <br>
+            Июль 2017 — август 2019
+        </p>
+        
+        <p class="p1">
+            Создание графического, визуального контента, согласно задачам. Брендирования, макеты, презентации, баннеры. 
+            Полиграфическая и сувенирная продукция. Создание анимированных и видео-роликов.
+        </p>
+    </div>
+    <div class="sub">
+        <img class="img" src="./img/Frame1.jpg" alt="1">
+         <p>
+                    HSE // Шрифт
+         </p>
+          <img class="img" src="./img/Frame2.jpg" alt="2">
+          <p>
+                   CH'U
+         </p>
+          <img class="img" src="./img/Frame3.jpg" alt="3">
+          <p>
+                  HSE // Tattoo
+         </p>
+            <img class="img" src="./img/Frame4.jpg" alt="4">
+         <p>
+                 HSE // Верстка
+          </p>
+          <img class="img" src="./img/Frame5.jpg" alt="5">
+            <p>
+                HSE // Attitude
+          </p>
+         <img class="img" src="./img/Frame6.jpg" alt="6">
+         <p>
+               HSE // Ремонт велосипедов
+         </p>
+          <img class="img" src="./img/Frame7.jpg" alt="7">
+          <p>
+              HSE // Алфавит
+         </p>
+         <img class="img" src="./img/Frame8.jpg" alt="8">
+         <p>
+             HSE // Чёрт возьми!
+        </p>
+        <img class="img" src="./img/Frame9.jpg" alt="9">
+        <p>
+            HSE // Зоопарк
+       </p>
+    </div>
+
+ <script src="https://cdn.jsdelivr.net/npm/typograf@6.7.4/dist/typograf.min.js"></script>
+    <script>
+      (function() {
+        var typograf = new Typograf({ locale: ['ru'] })
+        var nodes = document.querySelectorAll('h1, h2, h3, h4, p')
+        for (var i = 0; i < nodes.length; i++) {
+          var node = nodes[i]
+          node.innerHTML = typograf.execute(node.innerHTML)
+        }
+      })()
+    </script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
